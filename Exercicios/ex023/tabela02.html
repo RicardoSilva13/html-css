@@ -11,16 +11,31 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative
+        }
+        caption {
+            background-color: lightgray;
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid black;
         }
         thead, tfoot {
             background-color: rgb(50, 90, 95);
             color: white;
         }
+        thead > tr> th {
+            position: sticky;
+            top: 1px;
+            background-color: rgb(50, 90, 95);;
+        }
         th, td{
-            background-image: linear-gradient(to right, rgba(75, 75, 75, 0.5), rgba(150, 150, 150, 0.5));
             font-size: 1.1em;
             border: 1px solid black;
             padding: 10px;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
         }
         td.num {
             text-align: right;
@@ -30,10 +45,13 @@
 <body>
     <h1>Uso de tabelas Grandes</h1>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -148,7 +166,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>População</th>
+                <th scope="row">População</th>
                 <td class="num"><strong>00000</strong></td>
             </tr>
         </tfoot>
