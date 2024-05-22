@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            background-color: gray;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 5px;
+        }
+        th {
+            font-size: 1.1em;
+        }
+        th,td {
+            border: 1px solid gray;
+            padding: 8px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercio de Tabela</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>BBBBBB</td>
+                <td>BBBBBB</td>
+                <td>BBBBBB</td>
+                <td>BBBBBB</td>
+            </tr>
+            <tr>
+                <td>CCCCCC</td>
+                <td>CCCCCC</td>
+                <td>CCCCCC</td>
+                <td>CCCCCC</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>DDDDDD</td>
+                <td>DDDDDD</td>
+                <td>DDDDDD</td>
+                <td>DDDDDD</td>
+            </tr>
+            <tr>
+                <td>EEEEEEE</td>
+                <td>EEEEEEE</td>
+                <td>EEEEEEE</td>
+                <td>EEEEEEE</td>
+            </tr>
+            <tr>
+                <td>FFFFFFF</td>
+                <td>FFFFFFF</td>
+                <td>FFFFFFF</td>
+                <td>FFFFFFF</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
