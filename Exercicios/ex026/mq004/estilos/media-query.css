@@ -3,5 +3,51 @@
 /* Estilo em Media Queries */
 
 @media print {
-    
+    main {
+        width: 90vw;
+        border: 1px solid black;
+    }
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+    img#cll {display: none;}
+    img#print {display: block;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px ) {
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+    img#cll {display: none;}
+    img#print {display: none;}
+    img#tablet {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px ) {
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+    img#cll {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+    img#cll {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
 }
