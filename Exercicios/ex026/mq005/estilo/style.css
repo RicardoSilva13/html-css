@@ -10,12 +10,14 @@ html, body{
     background-color: lightgray;
 }
 header {
-    background-color: gray;
+    background: url(../bk-001.webp) center, no-repeat, fixed;
+    background-size: cover;
     padding: 8px;
 }
 header > h1 {
     padding: 10px;
     text-align: center;
+    color: white;
     text-shadow: 1px 2px 3px rgba(30, 27, 57, 0.7);
 }
 span#menu {
