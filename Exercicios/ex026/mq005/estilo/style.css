@@ -15,23 +15,22 @@ header {
     padding: 8px;
 }
 header > h1 {
-    padding: 10px;
+    padding: 1.2em;
     text-align: center;
     color: white;
     text-shadow: 1px 2px 3px rgba(30, 27, 57, 0.7);
 }
-span#menu {
+span#burguer {
     display: block;
     background-color: rgb(64, 64, 64);
     color: white;
     text-align: center;
     padding: 10px;
-    width: 80vw;
     margin: auto;
     border-radius: 16px;
     cursor: pointer;
 }
-span#menu:hover {
+span#burguer:hover {
     background-color: rgba(78, 73, 97, 0.737);
 }
 menu {
@@ -43,7 +42,6 @@ menu > ul {
 }
 menu a {
     display: block;
-    width: 80vw;
     margin: 4px auto;
     background-color: rgb(64, 64, 64);
     padding: 10px;
